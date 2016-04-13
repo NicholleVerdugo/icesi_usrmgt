@@ -7,7 +7,7 @@ def client(request):
         client = service.app.test_client()
         return client
 
-def hello(client):
+def get_users(client):
         return client.get('/api/v1.0/usermgt/users', follow_redirects=True)
 
 def test_get_users(client):
