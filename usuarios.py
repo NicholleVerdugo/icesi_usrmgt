@@ -3,7 +3,7 @@ import json
 from flask import Flask
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/api/v1.0/usermgt/users")
 def usuarios():
 
 	ret=commands.getoutput("ls /home | sort")
